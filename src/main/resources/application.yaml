@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: ptax-api
+  profiles:
+    default: dev

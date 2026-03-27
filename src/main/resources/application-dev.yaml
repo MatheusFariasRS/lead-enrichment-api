@@ -1,0 +1,66 @@
+spring:
+  application:
+    name: ptax-api
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/local_db
+    username: local_user
+    password: local_password
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+springdoc:
+  swagger-ui:
+    path: /docs
+    operations-sorter: method
+    tags-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: ptax-api
+    description: API para consulta e exposição de dados PTAX
+    version: 1.0.0-dev
+
+app:
+  security:
+    api-key: dev-secret-key
+    header-name: X-API-KEY
+
+  bcb:
+    base-url: https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata
+    timeout-ms: 5000
+
+logging:
+  level:
+    org.springframework.web: INFO
+    org.hibernate.SQL: INFO
