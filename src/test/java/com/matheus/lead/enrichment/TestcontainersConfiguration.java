@@ -1,4 +1,4 @@
-package com.matheus.ptaxapi;
+package com.matheus.lead.enrichment;
 
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;

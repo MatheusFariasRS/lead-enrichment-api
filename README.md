@@ -1,6 +1,6 @@
-# Ptax API
+# lead-enrichment-api
 
-Backend project built with Java and Spring Boot to provide PTAX-related data through a structured REST API.
+Backend project built with Java and Spring Boot to import, organize, and enrich lead data from CSV files using external APIs.
 
 ## Tech Stack
 
@@ -21,9 +21,14 @@ docker compose up -d
 ./mvnw spring-boot:run
 ```
 
-## Useful Endpoints
+## API Docs & Monitoring
 
 - `http://localhost:8080/docs`
 - `http://localhost:8080/v3/api-docs`
 - `http://localhost:8080/actuator/health`
 - `http://localhost:8080/actuator/info`
+
+
+## Project Goal
+
+This project focuses on backend engineering practices such as data pipelines, external API integration, data enrichment, and system observability.

@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.matheus</groupId>
-	<artifactId>ptax-api</artifactId>
+	<artifactId>lead-enrichment-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name/>
-	<description/>
+	<name>lead-enrichment-api</name>
+	<description>API for lead data enrichment and processing</description>
 	<url/>
 	<licenses>
 		<license/>

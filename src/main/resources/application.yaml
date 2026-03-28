@@ -1,5 +1,5 @@
 spring:
   application:
-    name: ptax-api
+    name: lead-enrichment-api
   profiles:
     default: dev

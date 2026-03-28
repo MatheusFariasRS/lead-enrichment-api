@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ptax-api
+    name: lead-enrichment-api
 
   datasource:
     url: jdbc:postgresql://localhost:5433/local_db
@@ -47,8 +47,8 @@ management:
 
 info:
   app:
-    name: ptax-api
-    description: API para consulta e exposição de dados PTAX
+    name: lead-enrichment-api
+    description: API para enriquecimento de dados de leads
     version: 1.0.0-dev
 
 app:
@@ -56,11 +56,12 @@ app:
     api-key: dev-secret-key
     header-name: X-API-KEY
 
-  bcb:
-    base-url: https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata
+  brasil-api:
+    base-url: https://brasilapi.com.br/api
     timeout-ms: 5000
 
 logging:
   level:
     org.springframework.web: INFO
-    org.hibernate.SQL: INFO
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
