@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class LeadEnrichmentApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PtaxApiApplication.class, args);
+		SpringApplication.run(LeadEnrichmentApiApplication.class, args);
 	}
 
 }
